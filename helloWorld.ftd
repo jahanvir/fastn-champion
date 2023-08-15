@@ -1,0 +1,6 @@
+;; hello world file
+-- ftd.text:Hello world
+
+;; requirement for FASTN.fd
+;; -- import: fastn
+;; -- fastn.package: expander
