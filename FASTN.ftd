@@ -1,18 +1,23 @@
 -- import: fastn
 
--- fastn.package: <user_name>.github.io/<repo_name>
-favicon: /-/<user_name>.github.io/<repo_name>/favicon.ico
+;; -- fastn.package: jahanvir.github.io/fastn-champion
+-- fastn.package: expander
+;; favicon: /-/jahanvir.github.io/fastn-champion/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
--- fastn.dependency: fastn-community.github.io/footer
--- fastn.dependency: fastn-community.github.io/roboto-typography
+-- fastn.dependency: fifthtry.github.io/admonitions as admonitions
+;; -- fastn.dependency: gargajit.github.io/expander as e
+;; -- fastn.dependency: fastn-community.github.io/footer
+;; -- fastn.dependency: fastn-community.github.io/roboto-typography
 
--- fastn.auto-import: <user_name>.github.io/<repo_name>/FASTN/ds
--- fastn.auto-import: <user_name>.github.io/<repo_name>/assets
--- fastn.auto-import: doc-site
+;; -- fastn.dependency: fifthtry.github.io/doc-site
 
--- fastn.sitemap:
+;; -- fastn.auto-import: jahanvir.github.io/fastn-champion/FASTN/ds
+;; -- fastn.auto-import: jahanvir.github.io/fastn-champion/assets
+;; -- fastn.auto-import: doc-site as ds
+;; -- fastn.dependency: doc
+;; -- fastn.sitemap:
 
-# Home: index.html
+;; # Home: index.html
 
-- Right Sidebar Sample: /sidebar/
+;; - Right Sidebar Sample: /sidebar/

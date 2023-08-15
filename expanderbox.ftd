@@ -1,0 +1,12 @@
+-- import: doc-site as ds
+-- import: expander/assets
+-- import: gargajit.github.io/expander as e
+-- ds.page: Hello, I am page header  ;;Page header
+site-logo:$assets.files.assets.images.j.svg
+;;I am comment
+
+-- e.box: Click on me to open secret message
+
+I am secret message.
+-- end: ds.page
+

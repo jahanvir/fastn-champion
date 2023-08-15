@@ -1,0 +1,20 @@
+-- import: doc-site as ds
+-- import: expander/assets
+-- ds.page: Hello, I am page header  ;;Page header
+site-logo:$assets.files.assets.images.j.svg
+;;I am comment
+
+I am page body ;;Page body
+-- ds.h1: I am header 1
+
+I am header1 body
+-- ds.h2: I am header 2
+
+I am header2 body
+-- ds.h3: I am header 3
+
+- I am unordered-list 1
+- I am unordered-list 2
+
+-- end: ds.page
+
