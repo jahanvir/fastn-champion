@@ -1,0 +1,6 @@
+-- ftd.text: Hello World
+padding.px: 20
+border-width.px: 1
+background.solid: #bbb
+height: fill-container
+width: fill-container
