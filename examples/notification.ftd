@@ -1,0 +1,19 @@
+-- import: doc-site as ds
+-- import: expander/assets
+-- import: ayushsoni1010.github.io/solid-notifications/components/notification as notif
+-- ds.page: Hello, I am page header  ;;Page header
+site-logo: $assets.files.assets.images.j.svg
+;;I am comment
+
+-- notif.wrapper:
+avatar_logo: $assets.files.assets.images.j.svg
+username: Mark Webber
+notify_message: reacted to your recent post
+highlight_notify_message: My first toournament today!
+duration: 1m ago
+is_new_notification: false
+notify_description: Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+
+-- end: notif.wrapper
+-- end: ds.page
+

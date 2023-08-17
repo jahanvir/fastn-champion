@@ -5,7 +5,9 @@
 ;; favicon: /-/jahanvir.github.io/fastn-champion/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
--- fastn.dependency: fifthtry.github.io/admonitions as admonitions
+;; -- fastn.dependency: fifthtry.github.io/winter-cs 
+;; -- fastn.dependency: fifthtry.github.io/admonitions as admonitions
+-- fastn.dependency: ayushsoni1010.github.io/solid-notifications as notif
 ;; -- fastn.dependency: gargajit.github.io/expander as e
 ;; -- fastn.dependency: fastn-community.github.io/footer
 ;; -- fastn.dependency: fastn-community.github.io/roboto-typography
@@ -17,6 +19,10 @@
 ;; -- fastn.auto-import: doc-site as ds
 ;; -- fastn.dependency: doc
 ;; -- fastn.sitemap:
+
+;; ;; # Home: index.html
+;; ;; # Hello World: /examples/helloWorld
+;; ;; # Notification: /examples/notification
 
 ;; # Home: index.html
 
