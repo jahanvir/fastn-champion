@@ -1,0 +1,9 @@
+-- component: button
+caption title:
+optional string link:
+
+-- ftd.text: $button.title
+Link: $button.link
+border-width.px: 2
+
+-- end: button

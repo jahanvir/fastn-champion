@@ -1,19 +1,6 @@
--- ftd.column:
-border-width.px: 1
-background.solid: #eee
-height: fill-container
-width: fill-container
-align-content: top-center   
 
--- ftd.column: 
-padding.px: 10
-border-width.px: 1
-spacing.fixed.px: 10
-width: fill-container
-background.solid: #bc9
 
--- ftd.text: first child
--- ftd.text: second child
 
--- end: ftd.column
--- end: ftd.column
+
+
+
