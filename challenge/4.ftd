@@ -1,0 +1,65 @@
+-- ftd.column:
+padding.px: 100
+background.solid: #eee
+height: fill-container
+width: fill-container
+align-content: top-center  
+
+-- box: 
+
+-- box.title:
+
+What is FTD?
+
+-- box.body:
+
+I am body
+
+-- box:
+
+-- end: ftd.column
+
+-- component box:
+caption title: Default header
+body body: Default body
+boolean $open: false
+
+-- ftd.column: 
+border-width.px: 4
+spacing.fixed.px: 10
+width: fill-container
+background.solid: #bc9
+margin-bottom.px: 20
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+border-bottom-width.px: 1
+padding.px: 10
+$on-click$: $toggle($value = $box.open)
+
+-- ftd.text: $box.title
+
+-- ftd.text: X
+if: {$box.open}
+
+-- ftd.text: O
+if: {!$box.open}
+
+-- end: ftd.row
+
+-- ftd.text: $box.body
+padding.px: 10
+height: hug-content
+if: { box.open }
+
+-- end: ftd.column
+
+-- end: box
+
+-- void toggle(value):
+boolean $value: 
+
+value= !value;
+
+
