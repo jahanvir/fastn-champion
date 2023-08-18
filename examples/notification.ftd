@@ -1,8 +1,11 @@
 -- import: doc-site as ds
 -- import: expander/assets
 -- import: ayushsoni1010.github.io/solid-notifications/components/notification as notif
+-- import: fastn-community.github.io/misty-gray-cs
+
 -- ds.page: Hello, I am page header  ;;Page header
 site-logo: $assets.files.assets.images.j.svg
+colors: $misty-gray-cs.main
 ;;I am comment
 
 -- notif.wrapper:
