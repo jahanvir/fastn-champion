@@ -1,0 +1,34 @@
+-- ftd.column:
+padding.px: 100
+border-width.px: 4
+background.solid: #eee
+height: fill-container
+width: fill-container
+align-content: top-center   
+
+-- ftd.column: 
+border-width.px: 4
+spacing.fixed.px: 10
+width: fill-container
+background.solid: #bc9
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+border-bottom-width.px: 1
+padding.px: 10
+
+-- ftd.text: Header
+-- ftd.text: X
+
+-- end: ftd.row
+
+-- ftd.row:
+padding.px: 10
+margin-bottom.px: 100
+-- ftd.text: Body
+
+-- end: ftd.row
+
+-- end: ftd.column
+-- end: ftd.column

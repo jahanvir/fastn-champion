@@ -7,6 +7,12 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <script type="ftd" id="ftd-data">
 {
+"challenge/button/mycomponent/expand-collasp/#box:body:0,0": "I am body",
+"challenge/button/mycomponent/expand-collasp/#box:body:0,1": "Default body",
+"challenge/button/mycomponent/expand-collasp/#box:open:0,0": false,
+"challenge/button/mycomponent/expand-collasp/#box:open:0,1": false,
+"challenge/button/mycomponent/expand-collasp/#box:title:0,0": "What is FTD?",
+"challenge/button/mycomponent/expand-collasp/#box:title:0,1": "Default header",
 "ftd#breakpoint-width": {
 "mobile": 768
 },
@@ -590,7 +596,7 @@
 </head>
 <body style="height: 100%; margin: 0;">
 
-<div data-id="main" style="height: 100%; width: 100%" class="ft_common ft_column"><div data-id="0:main" style="" class="ft_common ft_md">Hello world</div></div>
+<div data-id="main" style="height: 100%; width: 100%" class="ft_common ft_column"><div data-id="0:main" style="align-items: center; background-color: rgba(238,238,238,1); height: 100%; justify-content: start; padding: 100px; width: 100%" class="ft_common ft_column"><div data-id="0,0:main" style="background-color: rgba(187,204,153,1); border-bottom-width: 4px; border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; gap: 10px; margin-bottom: 20px; width: 100%" class="ft_common ft_column"><div data-id="0,0,0:main" onclick="window.ftd.handle_event(event, 'main', '[{&quot;name&quot;:&quot;challenge_button_mycomponent_expand_collasp___toggle___main&quot;,&quot;values&quot;:[[&quot;value&quot;,{&quot;mutable&quot;:true,&quot;reference&quot;:&quot;challenge/button/mycomponent/expand-collasp/#box:open:0,0&quot;}]]}]', this)" style="border-bottom-width: 1px; cursor: pointer; gap: 0; justify-content: space-between; padding: 10px; width: 100%" class="ft_common ft_row"><div data-id="0,0,0,0:main" style="" class="ft_common ft_md">What is FTD?</div><div data-id="0,0,0,1:main" style="display: none" class="ft_common ft_md">X</div><div data-id="0,0,0,2:main" style="" class="ft_common ft_md">O</div></div><div data-id="0,0,1:main" style="display: none; height: fit-content; padding: 10px" class="ft_common ft_md">I am body</div></div><div data-id="0,1:main" style="background-color: rgba(187,204,153,1); border-bottom-width: 4px; border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; gap: 10px; margin-bottom: 20px; width: 100%" class="ft_common ft_column"><div data-id="0,1,0:main" onclick="window.ftd.handle_event(event, 'main', '[{&quot;name&quot;:&quot;challenge_button_mycomponent_expand_collasp___toggle___main&quot;,&quot;values&quot;:[[&quot;value&quot;,{&quot;mutable&quot;:true,&quot;reference&quot;:&quot;challenge/button/mycomponent/expand-collasp/#box:open:0,1&quot;}]]}]', this)" style="border-bottom-width: 1px; cursor: pointer; gap: 0; justify-content: space-between; padding: 10px; width: 100%" class="ft_common ft_row"><div data-id="0,1,0,0:main" style="" class="ft_common ft_md">Default header</div><div data-id="0,1,0,1:main" style="display: none" class="ft_common ft_md">X</div><div data-id="0,1,0,2:main" style="" class="ft_common ft_md">O</div></div><div data-id="0,1,1:main" style="display: none; height: fit-content; padding: 10px" class="ft_common ft_md">Default body</div></div></div></div>
 
 <script src="default-1658FA10DBCAC18203B086469F1F0DB9A2FE592C98D1DA93A39718C63E1A0B09.js"></script>
 <script>
@@ -710,6 +716,126 @@ a.value = v
 
 
 
+function challenge_button_mycomponent_expand_collasp___toggle___main(value,args,data,id){
+value.value = !value.value;
+}
+
+
+window.node_change_main = {};
+window.node_change_main["0,0,0,0:main__text"] = function(data) {
+document.querySelector(`[data-id="0,0,0,0:main"]`).innerHTML = resolve_reference("challenge/button/mycomponent/expand-collasp/#box:title:0,0", data);
+}
+window.node_change_main["0,0,0,1:main__display"] = function(data) {
+if(function(){
+return resolve_reference("challenge/button/mycomponent/expand-collasp/#box:open:0,0", data);
+}()){
+document.querySelector(`[data-id="0,0,0,1:main"]`).style["display"] = "block";
+}
+else {document.querySelector(`[data-id="0,0,0,1:main"]`).style["display"] = "none";}
+}
+window.node_change_main["0,0,0,2:main__display"] = function(data) {
+if(function(){
+return (!resolve_reference("challenge/button/mycomponent/expand-collasp/#box:open:0,0", data));
+}()){
+document.querySelector(`[data-id="0,0,0,2:main"]`).style["display"] = "block";
+}
+else {document.querySelector(`[data-id="0,0,0,2:main"]`).style["display"] = "none";}
+}
+window.node_change_main["0,0,1:main__display"] = function(data) {
+if(function(){
+return resolve_reference("challenge/button/mycomponent/expand-collasp/#box:open:0,0", data);
+}()){
+document.querySelector(`[data-id="0,0,1:main"]`).style["display"] = "block";
+}
+else {document.querySelector(`[data-id="0,0,1:main"]`).style["display"] = "none";}
+}
+
+window.node_change_main["0,0,1:main__text"] = function(data) {
+document.querySelector(`[data-id="0,0,1:main"]`).innerHTML = resolve_reference("challenge/button/mycomponent/expand-collasp/#box:body:0,0", data);
+}
+window.node_change_main["0,1,0,0:main__text"] = function(data) {
+document.querySelector(`[data-id="0,1,0,0:main"]`).innerHTML = resolve_reference("challenge/button/mycomponent/expand-collasp/#box:title:0,1", data);
+}
+window.node_change_main["0,1,0,1:main__display"] = function(data) {
+if(function(){
+return resolve_reference("challenge/button/mycomponent/expand-collasp/#box:open:0,1", data);
+}()){
+document.querySelector(`[data-id="0,1,0,1:main"]`).style["display"] = "block";
+}
+else {document.querySelector(`[data-id="0,1,0,1:main"]`).style["display"] = "none";}
+}
+window.node_change_main["0,1,0,2:main__display"] = function(data) {
+if(function(){
+return (!resolve_reference("challenge/button/mycomponent/expand-collasp/#box:open:0,1", data));
+}()){
+document.querySelector(`[data-id="0,1,0,2:main"]`).style["display"] = "block";
+}
+else {document.querySelector(`[data-id="0,1,0,2:main"]`).style["display"] = "none";}
+}
+window.node_change_main["0,1,1:main__display"] = function(data) {
+if(function(){
+return resolve_reference("challenge/button/mycomponent/expand-collasp/#box:open:0,1", data);
+}()){
+document.querySelector(`[data-id="0,1,1:main"]`).style["display"] = "block";
+}
+else {document.querySelector(`[data-id="0,1,1:main"]`).style["display"] = "none";}
+}
+
+window.node_change_main["0,1,1:main__text"] = function(data) {
+document.querySelector(`[data-id="0,1,1:main"]`).innerHTML = resolve_reference("challenge/button/mycomponent/expand-collasp/#box:body:0,1", data);
+}
+window.set_value_main = {};
+window.set_value_main["challenge/button/mycomponent/expand-collasp/#box:body:0,0"] = function (data, new_value, remaining) {
+window.ftd.utils.set_value_helper(data, "challenge/button/mycomponent/expand-collasp/#box:body:0,0", remaining, new_value);
+
+window.ftd.call_mutable_value_changes("challenge/button/mycomponent/expand-collasp/#box:body:0,0", "main");
+window.ftd.call_immutable_value_changes("challenge/button/mycomponent/expand-collasp/#box:body:0,0", "main");
+window.ftd.utils.node_change_call("main","0,0,1:main__text", data);
+};
+
+window.set_value_main["challenge/button/mycomponent/expand-collasp/#box:body:0,1"] = function (data, new_value, remaining) {
+window.ftd.utils.set_value_helper(data, "challenge/button/mycomponent/expand-collasp/#box:body:0,1", remaining, new_value);
+
+window.ftd.call_mutable_value_changes("challenge/button/mycomponent/expand-collasp/#box:body:0,1", "main");
+window.ftd.call_immutable_value_changes("challenge/button/mycomponent/expand-collasp/#box:body:0,1", "main");
+window.ftd.utils.node_change_call("main","0,1,1:main__text", data);
+};
+
+window.set_value_main["challenge/button/mycomponent/expand-collasp/#box:open:0,0"] = function (data, new_value, remaining) {
+window.ftd.utils.set_value_helper(data, "challenge/button/mycomponent/expand-collasp/#box:open:0,0", remaining, new_value);
+
+window.ftd.call_mutable_value_changes("challenge/button/mycomponent/expand-collasp/#box:open:0,0", "main");
+window.ftd.call_immutable_value_changes("challenge/button/mycomponent/expand-collasp/#box:open:0,0", "main");
+window.ftd.utils.node_change_call("main","0,0,0,2:main__display", data);
+window.ftd.utils.node_change_call("main","0,0,0,1:main__display", data);
+window.ftd.utils.node_change_call("main","0,0,1:main__display", data);
+};
+
+window.set_value_main["challenge/button/mycomponent/expand-collasp/#box:open:0,1"] = function (data, new_value, remaining) {
+window.ftd.utils.set_value_helper(data, "challenge/button/mycomponent/expand-collasp/#box:open:0,1", remaining, new_value);
+
+window.ftd.call_mutable_value_changes("challenge/button/mycomponent/expand-collasp/#box:open:0,1", "main");
+window.ftd.call_immutable_value_changes("challenge/button/mycomponent/expand-collasp/#box:open:0,1", "main");
+window.ftd.utils.node_change_call("main","0,1,0,1:main__display", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__display", data);
+window.ftd.utils.node_change_call("main","0,1,0,2:main__display", data);
+};
+
+window.set_value_main["challenge/button/mycomponent/expand-collasp/#box:title:0,0"] = function (data, new_value, remaining) {
+window.ftd.utils.set_value_helper(data, "challenge/button/mycomponent/expand-collasp/#box:title:0,0", remaining, new_value);
+
+window.ftd.call_mutable_value_changes("challenge/button/mycomponent/expand-collasp/#box:title:0,0", "main");
+window.ftd.call_immutable_value_changes("challenge/button/mycomponent/expand-collasp/#box:title:0,0", "main");
+window.ftd.utils.node_change_call("main","0,0,0,0:main__text", data);
+};
+
+window.set_value_main["challenge/button/mycomponent/expand-collasp/#box:title:0,1"] = function (data, new_value, remaining) {
+window.ftd.utils.set_value_helper(data, "challenge/button/mycomponent/expand-collasp/#box:title:0,1", remaining, new_value);
+
+window.ftd.call_mutable_value_changes("challenge/button/mycomponent/expand-collasp/#box:title:0,1", "main");
+window.ftd.call_immutable_value_changes("challenge/button/mycomponent/expand-collasp/#box:title:0,1", "main");
+window.ftd.utils.node_change_call("main","0,1,0,0:main__text", data);
+};
 
 
 

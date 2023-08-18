@@ -2,6 +2,7 @@
 
 ;; -- fastn.package: jahanvir.github.io/fastn-champion
 -- fastn.package: expander
+-- fastn.package: challenge/button
 ;; favicon: /-/jahanvir.github.io/fastn-champion/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
