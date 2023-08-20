@@ -2,7 +2,7 @@
 
 ;; -- fastn.package: jahanvir.github.io/fastn-champion
 -- fastn.package: expander
--- fastn.package: challenge/button
+
 ;; favicon: /-/jahanvir.github.io/fastn-champion/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
@@ -13,6 +13,9 @@
 -- fastn.dependency: ayushsoni1010.github.io/solid-notifications as notif
 -- fastn.dependency: gargajit.github.io/expander as e
 -- fastn.dependency: fifthtry.github.io/dark-mode-switcher
+
+;; button - chapion challenge 1
+-- fastn.dependency: fifthtry.github.io/button
 
 ;; -- fastn.dependency: fastn-community.github.io/footer
 ;; -- fastn.dependency: fastn-community.github.io/roboto-typography

@@ -1,0 +1,29 @@
+
+-- ftd.column:
+padding.px: 50
+-- button:
+
+-- button.title: I am button
+-- button.size: regular
+
+-- end: ftd.column
+
+-- component button:
+caption title: Button
+string size:
+
+-- ftd.text: $button.title
+;; role if { $button.size = regular }: $inherited.types.copy-regular
+role: $inherited.types.copy-large
+style: bold
+text-align: center
+border-radius.px: 6
+border-width.px: 2
+padding.px: 10
+color: #fff
+background.solid: #bc9
+;; Link: $button.link
+
+
+-- end: button
+
