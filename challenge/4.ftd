@@ -1,9 +1,12 @@
+-- import: fifthtry.github.io/dark-mode-switcher as dms
+
+;; -- dms.dark-mode-switcher-float:
 -- ftd.column:
 padding.px: 100
 background.solid: #eee
 height: fill-container
 width: fill-container
-align-content: top-center  
+align-content: top-center 
 
 -- box: 
 
@@ -18,11 +21,14 @@ I am body
 -- box:
 
 -- end: ftd.column
+-- dms.dark-mode-switcher-float:
+
 
 -- component box:
 caption title: Default header
 body body: Default body
 boolean $open: false
+boolean $show: false
 
 -- ftd.column: 
 border-width.px: 4
@@ -36,9 +42,15 @@ width: fill-container
 spacing: space-between
 border-bottom-width.px: 1
 padding.px: 10
-$on-click$: $toggle($value = $box.open)
+background.solid if {$box.show}: #383d2e
+color if {$box.show}: #fff
+$on-click$: $ftd.toggle($a = $box.open)
+$on-mouse-enter$: $ftd.set-bool($a = $box.show, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $box.show, v = false)
 
 -- ftd.text: $box.title
+;; style if {$box.show}: bold
+
 
 -- ftd.text: X
 if: {$box.open}
@@ -57,9 +69,11 @@ if: { box.open }
 
 -- end: box
 
--- void toggle(value):
-boolean $value: 
+;; -- void toggle(value):
+;; boolean $value: 
 
-value= !value;
+;; value= !value;
+
+
 
 
