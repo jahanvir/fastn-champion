@@ -1,4 +1,26 @@
--- import: challenge/button/buttonLib as btn
+-- import: fifthtry.github.io/button
 
--- btn.button: Get a demo
+-- ftd.column:
+padding.px: 50
 
+-- ftd.row:
+spacing.fixed.px: 20
+-- button.button: Extra Large Button
+role: primary
+extra-large: true
+
+-- button.button: Large Button
+role: primary
+large: true
+
+-- button.button: Medium Button
+role: primary
+medium: true
+
+-- button.button: Small Button
+role: primary
+small: true
+
+
+-- end: ftd.row
+-- end: ftd.column

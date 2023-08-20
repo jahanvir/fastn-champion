@@ -7,12 +7,8 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <script type="ftd" id="ftd-data">
 {
-"expander/mycomponent/expand-collasp/#box:body:0,0": "I am body",
-"expander/mycomponent/expand-collasp/#box:body:0,1": "Default body",
-"expander/mycomponent/expand-collasp/#box:open:0,0": false,
-"expander/mycomponent/expand-collasp/#box:open:0,1": false,
-"expander/mycomponent/expand-collasp/#box:title:0,0": "What is FTD?",
-"expander/mycomponent/expand-collasp/#box:title:0,1": "Default header",
+"expander/mycomponent/button/#button:size:0,0": "regular",
+"expander/mycomponent/button/#button:title:0,0": "I am button",
 "ftd#breakpoint-width": {
 "mobile": 768
 },
@@ -596,7 +592,7 @@
 </head>
 <body style="height: 100%; margin: 0;">
 
-<div data-id="main" style="height: 100%; width: 100%" class="ft_common ft_column"><div data-id="0:main" style="align-items: center; background-color: rgba(238,238,238,1); height: 100%; justify-content: start; padding: 100px; width: 100%" class="ft_common ft_column"><div data-id="0,0:main" style="background-color: rgba(187,204,153,1); border-bottom-width: 4px; border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; gap: 10px; margin-bottom: 20px; width: 100%" class="ft_common ft_column"><div data-id="0,0,0:main" onclick="window.ftd.handle_event(event, 'main', '[{&quot;name&quot;:&quot;expander_mycomponent_expand_collasp___toggle___main&quot;,&quot;values&quot;:[[&quot;value&quot;,{&quot;mutable&quot;:true,&quot;reference&quot;:&quot;expander/mycomponent/expand-collasp/#box:open:0,0&quot;}]]}]', this)" style="border-bottom-width: 1px; cursor: pointer; gap: 0; justify-content: space-between; padding: 10px; width: 100%" class="ft_common ft_row"><div data-id="0,0,0,0:main" style="" class="ft_common ft_md">What is FTD?</div><div data-id="0,0,0,1:main" style="display: none" class="ft_common ft_md">X</div><div data-id="0,0,0,2:main" style="" class="ft_common ft_md">O</div></div><div data-id="0,0,1:main" style="display: none; height: fit-content; padding: 10px" class="ft_common ft_md">I am body</div></div><div data-id="0,1:main" style="background-color: rgba(187,204,153,1); border-bottom-width: 4px; border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; gap: 10px; margin-bottom: 20px; width: 100%" class="ft_common ft_column"><div data-id="0,1,0:main" onclick="window.ftd.handle_event(event, 'main', '[{&quot;name&quot;:&quot;expander_mycomponent_expand_collasp___toggle___main&quot;,&quot;values&quot;:[[&quot;value&quot;,{&quot;mutable&quot;:true,&quot;reference&quot;:&quot;expander/mycomponent/expand-collasp/#box:open:0,1&quot;}]]}]', this)" style="border-bottom-width: 1px; cursor: pointer; gap: 0; justify-content: space-between; padding: 10px; width: 100%" class="ft_common ft_row"><div data-id="0,1,0,0:main" style="" class="ft_common ft_md">Default header</div><div data-id="0,1,0,1:main" style="display: none" class="ft_common ft_md">X</div><div data-id="0,1,0,2:main" style="" class="ft_common ft_md">O</div></div><div data-id="0,1,1:main" style="display: none; height: fit-content; padding: 10px" class="ft_common ft_md">Default body</div></div></div></div><style>
+<div data-id="main" style="height: 100%; width: 100%" class="ft_common ft_column"><div data-id="0:main" style="padding: 50px" class="ft_common ft_column"><div data-id="0,0:main" style="background-color: rgba(187,204,153,1); border-bottom-width: 2px; border-left-width: 2px; border-radius: 6px; border-right-width: 2px; border-top-width: 2px; color: rgba(255,255,255,1); font-family: sans-serif; font-size: 22px; font-weight: 700; line-height: 34px; padding: 10px; text-align: center" class="ft_common ft_md">I am button</div></div></div><style>
 
 
 
@@ -1167,126 +1163,73 @@ a.value = v
 }
 
 
-
-function expander_mycomponent_expand_collasp___toggle___main(value,args,data,id){
-value.value = !value.value;
-}
-
-
 window.node_change_main = {};
-window.node_change_main["0,0,0,0:main__text"] = function(data) {
-document.querySelector(`[data-id="0,0,0,0:main"]`).innerHTML = resolve_reference("expander/mycomponent/expand-collasp/#box:title:0,0", data);
-}
-window.node_change_main["0,0,0,1:main__display"] = function(data) {
-if(function(){
-return resolve_reference("expander/mycomponent/expand-collasp/#box:open:0,0", data);
-}()){
-document.querySelector(`[data-id="0,0,0,1:main"]`).style["display"] = "block";
-}
-else {document.querySelector(`[data-id="0,0,0,1:main"]`).style["display"] = "none";}
-}
-window.node_change_main["0,0,0,2:main__display"] = function(data) {
-if(function(){
-return (!resolve_reference("expander/mycomponent/expand-collasp/#box:open:0,0", data));
-}()){
-document.querySelector(`[data-id="0,0,0,2:main"]`).style["display"] = "block";
-}
-else {document.querySelector(`[data-id="0,0,0,2:main"]`).style["display"] = "none";}
-}
-window.node_change_main["0,0,1:main__display"] = function(data) {
-if(function(){
-return resolve_reference("expander/mycomponent/expand-collasp/#box:open:0,0", data);
-}()){
-document.querySelector(`[data-id="0,0,1:main"]`).style["display"] = "block";
-}
-else {document.querySelector(`[data-id="0,0,1:main"]`).style["display"] = "none";}
+window.node_change_main["0,0:main__text"] = function(data) {
+document.querySelector(`[data-id="0,0:main"]`).innerHTML = resolve_reference("expander/mycomponent/button/#button:title:0,0", data);
 }
 
-window.node_change_main["0,0,1:main__text"] = function(data) {
-document.querySelector(`[data-id="0,0,1:main"]`).innerHTML = resolve_reference("expander/mycomponent/expand-collasp/#box:body:0,0", data);
+window.node_change_main["0,0:main__font-family"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,0:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.copy-large", data).desktop)));
 }
-window.node_change_main["0,1,0,0:main__text"] = function(data) {
-document.querySelector(`[data-id="0,1,0,0:main"]`).innerHTML = resolve_reference("expander/mycomponent/expand-collasp/#box:title:0,1", data);
-}
-window.node_change_main["0,1,0,1:main__display"] = function(data) {
-if(function(){
-return resolve_reference("expander/mycomponent/expand-collasp/#box:open:0,1", data);
-}()){
-document.querySelector(`[data-id="0,1,0,1:main"]`).style["display"] = "block";
-}
-else {document.querySelector(`[data-id="0,1,0,1:main"]`).style["display"] = "none";}
-}
-window.node_change_main["0,1,0,2:main__display"] = function(data) {
-if(function(){
-return (!resolve_reference("expander/mycomponent/expand-collasp/#box:open:0,1", data));
-}()){
-document.querySelector(`[data-id="0,1,0,2:main"]`).style["display"] = "block";
-}
-else {document.querySelector(`[data-id="0,1,0,2:main"]`).style["display"] = "none";}
-}
-window.node_change_main["0,1,1:main__display"] = function(data) {
-if(function(){
-return resolve_reference("expander/mycomponent/expand-collasp/#box:open:0,1", data);
-}()){
-document.querySelector(`[data-id="0,1,1:main"]`).style["display"] = "block";
-}
-else {document.querySelector(`[data-id="0,1,1:main"]`).style["display"] = "none";}
+else {document.querySelector(`[data-id="0,0:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.copy-large", data).mobile)));}
 }
 
-window.node_change_main["0,1,1:main__text"] = function(data) {
-document.querySelector(`[data-id="0,1,1:main"]`).innerHTML = resolve_reference("expander/mycomponent/expand-collasp/#box:body:0,1", data);
+window.node_change_main["0,0:main__font-size"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,0:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.copy-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,0:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.copy-large", data).mobile)));}
+}
+
+window.node_change_main["0,0:main__font-weight"] = function(data) {
+document.querySelector(`[data-id="0,0:main"]`).style["font-weight"] = "700";
+}
+
+window.node_change_main["0,0:main__letter-spacing"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,0:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.copy-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,0:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.copy-large", data).mobile)));}
+}
+
+window.node_change_main["0,0:main__line-height"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,0:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.copy-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,0:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.copy-large", data).mobile)));}
 }
 window.set_value_main = {};
-window.set_value_main["expander/mycomponent/expand-collasp/#box:body:0,0"] = function (data, new_value, remaining) {
-window.ftd.utils.set_value_helper(data, "expander/mycomponent/expand-collasp/#box:body:0,0", remaining, new_value);
+window.set_value_main["expander/mycomponent/button/#button:title:0,0"] = function (data, new_value, remaining) {
+window.ftd.utils.set_value_helper(data, "expander/mycomponent/button/#button:title:0,0", remaining, new_value);
 
-window.ftd.call_mutable_value_changes("expander/mycomponent/expand-collasp/#box:body:0,0", "main");
-window.ftd.call_immutable_value_changes("expander/mycomponent/expand-collasp/#box:body:0,0", "main");
-window.ftd.utils.node_change_call("main","0,0,1:main__text", data);
+window.ftd.call_mutable_value_changes("expander/mycomponent/button/#button:title:0,0", "main");
+window.ftd.call_immutable_value_changes("expander/mycomponent/button/#button:title:0,0", "main");
+window.ftd.utils.node_change_call("main","0,0:main__text", data);
 };
 
-window.set_value_main["expander/mycomponent/expand-collasp/#box:body:0,1"] = function (data, new_value, remaining) {
-window.ftd.utils.set_value_helper(data, "expander/mycomponent/expand-collasp/#box:body:0,1", remaining, new_value);
+window.set_value_main["ftd#default-types"] = function (data, new_value, remaining) {
+window.ftd.utils.set_value_helper(data, "ftd#default-types", remaining, new_value);
 
-window.ftd.call_mutable_value_changes("expander/mycomponent/expand-collasp/#box:body:0,1", "main");
-window.ftd.call_immutable_value_changes("expander/mycomponent/expand-collasp/#box:body:0,1", "main");
-window.ftd.utils.node_change_call("main","0,1,1:main__text", data);
+window.ftd.call_mutable_value_changes("ftd#default-types", "main");
+window.ftd.call_immutable_value_changes("ftd#default-types", "main");
+window.ftd.utils.node_change_call("main","0,0:main__font-size", data);
+window.ftd.utils.node_change_call("main","0,0:main__font-weight", data);
+window.ftd.utils.node_change_call("main","0,0:main__font-family", data);
+window.ftd.utils.node_change_call("main","0,0:main__line-height", data);
+window.ftd.utils.node_change_call("main","0,0:main__letter-spacing", data);
 };
 
-window.set_value_main["expander/mycomponent/expand-collasp/#box:open:0,0"] = function (data, new_value, remaining) {
-window.ftd.utils.set_value_helper(data, "expander/mycomponent/expand-collasp/#box:open:0,0", remaining, new_value);
+window.set_value_main["ftd#device"] = function (data, new_value, remaining) {
+window.ftd.utils.set_value_helper(data, "ftd#device", remaining, new_value);
 
-window.ftd.call_mutable_value_changes("expander/mycomponent/expand-collasp/#box:open:0,0", "main");
-window.ftd.call_immutable_value_changes("expander/mycomponent/expand-collasp/#box:open:0,0", "main");
-window.ftd.utils.node_change_call("main","0,0,0,1:main__display", data);
-window.ftd.utils.node_change_call("main","0,0,0,2:main__display", data);
-window.ftd.utils.node_change_call("main","0,0,1:main__display", data);
-};
-
-window.set_value_main["expander/mycomponent/expand-collasp/#box:open:0,1"] = function (data, new_value, remaining) {
-window.ftd.utils.set_value_helper(data, "expander/mycomponent/expand-collasp/#box:open:0,1", remaining, new_value);
-
-window.ftd.call_mutable_value_changes("expander/mycomponent/expand-collasp/#box:open:0,1", "main");
-window.ftd.call_immutable_value_changes("expander/mycomponent/expand-collasp/#box:open:0,1", "main");
-window.ftd.utils.node_change_call("main","0,1,1:main__display", data);
-window.ftd.utils.node_change_call("main","0,1,0,2:main__display", data);
-window.ftd.utils.node_change_call("main","0,1,0,1:main__display", data);
-};
-
-window.set_value_main["expander/mycomponent/expand-collasp/#box:title:0,0"] = function (data, new_value, remaining) {
-window.ftd.utils.set_value_helper(data, "expander/mycomponent/expand-collasp/#box:title:0,0", remaining, new_value);
-
-window.ftd.call_mutable_value_changes("expander/mycomponent/expand-collasp/#box:title:0,0", "main");
-window.ftd.call_immutable_value_changes("expander/mycomponent/expand-collasp/#box:title:0,0", "main");
-window.ftd.utils.node_change_call("main","0,0,0,0:main__text", data);
-};
-
-window.set_value_main["expander/mycomponent/expand-collasp/#box:title:0,1"] = function (data, new_value, remaining) {
-window.ftd.utils.set_value_helper(data, "expander/mycomponent/expand-collasp/#box:title:0,1", remaining, new_value);
-
-window.ftd.call_mutable_value_changes("expander/mycomponent/expand-collasp/#box:title:0,1", "main");
-window.ftd.call_immutable_value_changes("expander/mycomponent/expand-collasp/#box:title:0,1", "main");
-window.ftd.utils.node_change_call("main","0,1,0,0:main__text", data);
+window.ftd.call_mutable_value_changes("ftd#device", "main");
+window.ftd.call_immutable_value_changes("ftd#device", "main");
+window.ftd.utils.node_change_call("main","0,0:main__font-weight", data);
+window.ftd.utils.node_change_call("main","0,0:main__font-size", data);
+window.ftd.utils.node_change_call("main","0,0:main__line-height", data);
+window.ftd.utils.node_change_call("main","0,0:main__letter-spacing", data);
+window.ftd.utils.node_change_call("main","0,0:main__font-family", data);
 };
 
 
