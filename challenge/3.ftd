@@ -1,0 +1,58 @@
+
+-- ftd.image-src just-light: https://sportshub.cbsistatic.com/i/2021/03/18/6eab5e5f-ca8c-42d1-862d-2df903b5309c/one-piece-wano-luffy-cosplay-1252700.jpg?width=1200
+
+-- ftd.column:
+background.solid: #DFD0FB
+width.fixed.px: 350
+align-content: center
+height.fixed.px: 410
+padding-horizontal.px: 30
+padding-vertical.px: 10
+
+-- ftd.image:
+src: $just-light
+width.fixed.px: 80
+height.fixed.px: 80
+border-radius.px: 100
+
+-- ftd.text: Name
+padding-top.px: 30
+style: bold
+role: $inherited.types.copy-large
+
+-- ftd.text: Lorem ipsum
+role: $inherited.types.copy-small
+padding-bottom.px: 20
+
+
+-- button: Dribble
+link: https://dribble.com/
+
+-- button: Behance
+link: https://behance.com/
+
+-- button: Webflow
+link: https://webflow.com/
+
+-- button: LinkedIn
+link: https://linkedin.com/
+
+-- end: ftd.column
+
+
+-- component button:
+caption title:
+optional string link: 
+
+-- ftd.text: $button.title
+link: $button.link
+border-width.px: 2
+padding.px: 10  
+margin.px: 4           
+border-radius.px: 20     
+width: fill-container
+style: bold                
+text-align: center   
+
+-- end: button
+
