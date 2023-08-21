@@ -44,6 +44,7 @@ margin-left.px: 190
 
 -- ftd.text: Forgot Password?
 color: blue
+link: #
 
 -- end: ftd.row
 
@@ -54,6 +55,7 @@ padding.px: 20
 -- button.button: Login
 role: tertiary
 medium: true
+link: #
 
 -- end:ftd.row
 
@@ -64,6 +66,7 @@ spacing.fixed.px: 3
 
 -- ftd.text: Register
 color: blue
+link: #
 
 -- end: ftd.row
 
