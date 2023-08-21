@@ -1,6 +1,6 @@
 -- import: fifthtry.github.io/dark-mode-switcher as dms
 
-;; -- dms.dark-mode-switcher-float:
+-- dms.dark-mode-switcher-float:
 -- ftd.column:
 padding.px: 100
 background.solid: #eee
@@ -21,7 +21,6 @@ I am body
 -- box:
 
 -- end: ftd.column
--- dms.dark-mode-switcher-float:
 
 
 -- component box:
@@ -68,6 +67,7 @@ if: { box.open }
 -- end: ftd.column
 
 -- end: box
+
 
 ;; -- void toggle(value):
 ;; boolean $value: 
