@@ -1,0 +1,72 @@
+-- import: fifthtry.github.io/button
+
+-- ftd.column:
+;; margin-left.px: 550
+;; margin-top.px: 100
+padding.px: 40
+padding-top.px: 60
+width.fixed.px: 400
+height.fixed.px: 400
+background.solid: #bc9
+
+-- ftd.column: 
+height: fill-container
+width: fill-container
+align-content: top-center
+
+
+-- ftd.text: Login
+style: bold
+role: $inherited.types.copy-large
+
+-- ftd.text-input:
+placeholder: Username
+padding-horizontal.px: 16
+padding-vertical.px: 8
+margin-vertical.px: 10
+width: fill-container
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 8
+
+-- ftd.text-input:
+placeholder: Password
+padding-horizontal.px: 16
+padding-vertical.px: 8
+margin-vertical.px: 10
+width: fill-container
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 8
+
+-- ftd.row: 
+margin-left.px: 190
+
+-- ftd.text: Forgot Password?
+color: blue
+
+-- end: ftd.row
+
+-- ftd.row: 
+padding-top.px: 30
+padding.px: 20
+
+-- button.button: Login
+role: tertiary
+medium: true
+
+-- end:ftd.row
+
+-- ftd.row: 
+spacing.fixed.px: 3
+
+-- ftd.text: New User?
+
+-- ftd.text: Register
+color: blue
+
+-- end: ftd.row
+
+
+-- end: ftd.column
+-- end: ftd.column

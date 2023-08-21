@@ -32,6 +32,6 @@
 ;; ;; # Hello World: /examples/helloWorld
 ;; ;; # Notification: /examples/notification
 
-;; # Home: index.html
+;; # Home: /
 
 ;; - Right Sidebar Sample: /sidebar/
