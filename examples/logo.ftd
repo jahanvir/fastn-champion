@@ -1,8 +1,9 @@
--- import: doc-site as ds
--- import: expander/assets
--- ds.page: Hello, I am page header  ;;Page header
-site-logo:$assets.files.assets.images.j.svg
-;;I am comment
-I am page body ;;Page body
--- end: ds.page
+;; -- import: doc-site as ds
+;; -- import: expander/assets
+;; -- ds.page: Hello, I am page header  ;;Page header
+;; site-logo:$assets.files.assets.images.j.svg
+;; ;;I am comment
+;; I am page body ;;Page body
+
+;; -- end: ds.page
 

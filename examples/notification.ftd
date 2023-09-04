@@ -3,19 +3,21 @@
 -- import: ayushsoni1010.github.io/solid-notifications/components/notification as notif
 -- import: fastn-community.github.io/misty-gray-cs
 
+-- ftd.image-src just-light: https://sportshub.cbsistatic.com/i/2021/03/18/6eab5e5f-ca8c-42d1-862d-2df903b5309c/one-piece-wano-luffy-cosplay-1252700.jpg?width=1200
+
 -- ds.page: Hello, I am page header  ;;Page header
 ;; site-logo: $assets.files.assets.images.j.svg
 colors: $misty-gray-cs.main
 ;;I am comment
 
 -- notif.wrapper:
-avatar_logo: j.svg
+avatar-logo: $assets.files.assets.images.j.svg
 username: Mark Webber
-notify_message: reacted to your recent post
-highlight_notify_message: My first toournament today!
+notify-message: reacted to your recent post
+highlight-notify-message: My first toournament today!
 duration: 1m ago
-is_new_notification: false
-notify_description: Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+is-new-notification: true
+is-group-notification: false
 
 ;; -- end: notif.wrapper
 -- end: ds.page

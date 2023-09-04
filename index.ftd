@@ -1,6 +1,24 @@
+-- import: doc-site as ds
+-- import: expander/assets
+-- import: ayushsoni1010.github.io/solid-notifications/components/notification as notif
+-- import: fastn-community.github.io/misty-gray-cs
 
+;; -- ftd.image-src just-light: https://sportshub.cbsistatic.com/i/2021/03/18/6eab5e5f-ca8c-42d1-862d-2df903b5309c/one-piece-wano-luffy-cosplay-1252700.jpg?width=1200
 
+-- ds.page: Hello, I am page header  ;;Page header
+;; site-logo: $assets.files.assets.images.j.svg
+colors: $misty-gray-cs.main
+;;I am comment
 
+-- notif.wrapper:
+avatar-logo: $assets.files.assets.images.j.svg
+username: Mark Webber
+notify-message: reacted to your recent post
+highlight-notify-message: My first toournament today!
+duration: 1m ago
+is-new-notification: true
+is-group-notification: false
+;; -- end: notif.wrapper
 
-
+-- end: ds.page
 
